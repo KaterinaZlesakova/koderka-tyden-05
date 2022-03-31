@@ -24,3 +24,42 @@ Nastav CSS pro třídu .banner tak, aby:
 - na obrazovce širší než 800px se banner zobrazí
 */
 
+
+.banner {
+	display: none;
+}
+
+
+@media screen and (min-width: 800px) {
+	
+	.banner {
+		display: block;
+	}
+
+	/* tohle dole použít pouze pokud bych chtěla při roztažení dát ty obdelniky vedle sebe */
+
+	/* .kontejner {
+		display: flex;
+	}
+	
+	.obdelnik {
+		flex: 1 1 calc(100% / 3)
+	} */
+
+}
+
+/* dále lze tento zápis udělat i takto
+
+@media screen and (max-width: 800px) {
+
+	.banner {
+		display: none`
+	}
+}
+
+
+*/
+
+
+
+

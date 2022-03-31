@@ -22,3 +22,31 @@ html { box-sizing: border-box; }
 }
 
 /* ---------------------------------------------------- */
+
+/* .prvni {
+	width: calc(100% / 3);
+} */
+
+/* .prvni {
+	width: calc(100% / 3 - 100px);
+} */
+
+/* .prvni {
+	padding: calc(1em + 10px);
+} */
+
+
+
+
+
+/* když chci stejnou šířku pro všechny boxy + mezeru stejnou mezi všemi boxy*/
+
+.kontejner {
+	display: flex;
+	flex-wrap: wrap;						/* prý se chystá i fce gap, kam se jenom zapíše, jaká má být mezera a automaticky se to odmezeruje */
+	justify-content: space-between;
+}
+
+.box {
+	flex: 0 0 calc((100% - 40px) / 3);
+}
