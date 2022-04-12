@@ -33,3 +33,68 @@ header > :last-child, footer > :last-child, article > :last-child, nav > :last-c
 	- 1000px
 */
 
+.reklama1 {
+	margin-bottom: 20px;
+}
+
+@media screen and (min-width: 640px) {
+	
+	.obsah {
+		display: flex;
+	}
+
+	.clanek {
+		flex-basis: 60%;
+	}
+
+	.reklama {
+		flex-basis: 40%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	
+	.kontejner {
+		display: flex;
+	}
+
+	.menu {
+		flex-basis: 25%;
+		flex-grow: 1;
+		flex-shrink: 1;
+	}
+
+	.obsah {
+		flex-basis: 75%;
+		flex-wrap: wrap;
+	}
+
+	.clanek {
+		flex-basis: 100%;
+	}
+
+	.reklama {
+		display: flex;
+		flex-basis: 100%;
+	}
+
+	.reklama1,
+	.reklama2 {
+		flex-basis: 50%;
+		flex-grow: 1;
+	}
+
+	.reklama1 {
+		margin-right: 20px;
+		margin-bottom: 0;
+	}
+
+}
+
+
+
+
+
+
+
+
